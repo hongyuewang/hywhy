@@ -1,3 +1,4 @@
+@charset "utf-8";
 @import "fonts/apexnew/style.css";
 
 body {
@@ -5,16 +6,8 @@ body {
   background-color: #1E2327;
   font-family: "ApexNew-Book";
 }
-.index-title {
-  font-family: "ApexNew-Medium";
-  font-size: 60px;
-  text-align: center;
-  letter-spacing: 0.2em;
-}
 
-.current-pos {
-  font-family: "ApexNew-ThinItalic";
-  font-size: 20px;
-  text-align: center;
-  letter-spacing: 0.2em;
+p {
+  font-family: "Arial";
+  letter-spacing: 0.025em;
 }

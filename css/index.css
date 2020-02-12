@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+#home-content {
+
+}
+
+.title-name {
+  font-family: "ApexNew-Medium";
+  font-size: 4em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  line-height: 0.75em;
+
+}
+
+.current-pos {
+  /* font-family: "ApexNew-ThinItalic"; */
+  font-family: "Consolas";
+  font-size: 1em;
+  text-align: center;
+  /* text-transform: uppercase;*/
+  letter-spacing: 0.2em;
+  line-height: 0.1em;
+}
+
+/* #hey, #ima {
+  text-align: center;
+  font-family: "Consolas";
+} */
