@@ -1,7 +1,11 @@
 @charset "utf-8";
 
-#home-content {
-
+.title-wrapper {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .title-name {
@@ -11,7 +15,6 @@
   text-transform: uppercase;
   letter-spacing: 0.2em;
   line-height: 0.75em;
-
 }
 
 .current-pos {
