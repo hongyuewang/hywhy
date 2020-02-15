@@ -21,6 +21,11 @@ a {
   padding-right: 1.5em;
   color: white;
   text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+
+a:hover {
+  transform: scale(1.2);
 }
 
 .title-wrapper {
