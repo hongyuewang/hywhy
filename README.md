@@ -1,2 +1,2 @@
 # hywhy-perso-website
-My personal website: hywhy.tech
+My personal website: https://hywhy.tech
