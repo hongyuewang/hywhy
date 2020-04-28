@@ -1,6 +1,9 @@
 @charset "utf-8";
 @import "fonts/apexnew/style.css";
 
+html {
+    scroll-behavior: smooth;
+}
 body {
     color: white;
     /* background-color: #000000; */
