@@ -11,6 +11,7 @@
     <!-- Javascript -->
     <script src="script/main.js"></script>
     <script src="script/index.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
 
 </head>
 
@@ -19,7 +20,7 @@
     <header class="title-wrapper">
         <nav class="navbar">
             <ul>
-                <li><a href="#about" onclick = "scrollToAbout()">about me</a></li>
+                <li><a href="#about">about me</a></li>
                 <li><a href="">my projects</a></li>
                 <li><a href="">contact</a></li>
                 <li><a href="resume.pdf" target="_blank">resumé</a></li>
@@ -55,6 +56,10 @@
 
     </section>
 
+    <script type="text/javascript">
+        ScrollReveal().reveal('.title-name', { delay: 50, duration: 2000 });
+        ScrollReveal().reveal('.text', { delay: 50, duration: 2000 });
+    </script>
 
 </body>
 </html>
