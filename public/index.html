@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hong Yue Wang</title>
     <!-- Stylesheets -->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'>
     <!-- Javascript -->
     <script src="script/main.js"></script>
@@ -39,7 +39,10 @@
 
     <section class="about" id="about">
         <div class="section-title" id="about-title">
-            <h3>ABOUT ME</h3>
+            <h3>
+                ABOUT <br>
+                 ME
+             </h3>
         </div>
         <div class="myface">
             <img src="img/canal.JPG" alt="myface">
@@ -48,8 +51,15 @@
             Hey, I'm Hong Yue, a software engineering student at the University of Ottawa.
             I am familiar with web design and object-oriented programming, as well as video editing.
         </div>
-    </section> <!-- end of about -->
 
+        <div class="languages">
+            <img class="language-logo" id="python" src="img/python.png" alt="Python Logo">
+            <img class="language-logo" id="java" src="img/java.png" alt="Java Logo">
+            <img class="language-logo" id="html" src="img/html.png" alt="HTML Logo">
+            <img class="language-logo" id="css" src="img/css.png" alt="CSS Logo">
+            <img class="language-logo" id="javascript" src="img/js.png" alt="Javascript Logo">
+        </div>
+    </section> <!-- end of about -->
 
 
     <section class="projects" id="projects">
@@ -58,6 +68,7 @@
 
     <script type="text/javascript">
         ScrollReveal().reveal('.title-name', { delay: 50, duration: 2000 });
+        ScrollReveal().reveal('h3', { delay: 50, duration: 2000 });
         ScrollReveal().reveal('.text', { delay: 50, duration: 2000 });
     </script>
 

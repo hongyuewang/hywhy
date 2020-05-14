@@ -1,5 +1,5 @@
 @charset "utf-8";
-
+@import "fonts/apexnew/style.css";
 
 nav {
     list-style-type: none;
@@ -30,16 +30,29 @@ a:hover {
 }
 
 .title-wrapper {
+    width: 100%;
+    height: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/blue-space.jpg);
     text-align: center;
     padding: 0;
     margin:0;
     display: inline-block;
-    width: 100%;
-    height: 100%;
     background-size: cover;
+    background-position: center;
     position: relative;
+    animation: shrink 15s infinite alternate;
+    animation-timing-function:ease-in-out;
 }
+
+@keyframes shrink {
+  0% {
+    background-size: 120% 120%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
 
 .title-name {
     font-family: "ApexNew-Medium";
@@ -48,8 +61,10 @@ a:hover {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    line-height: 1em;
+    line-height: 1.5em;
     margin-top: 0.5em;
+    padding-top: 0.4em;
+    padding-bottom: 1em;
 }
 
 
@@ -70,17 +85,27 @@ a:hover {
 
 .section-title {
     text-align: center;
-    padding: 5em;
+    padding: 2.5em;
     letter-spacing: 0.5em;
-    font-size: 0.85em;
-}
-h3.section-title {
-    font-family: "Consolas";
+    background-color: #FEF8F7;
+    color:black;
+    z-index: -1;
+    font-family: "ApexNew-Medium";
     font-weight: lighter;
 }
 
-.about {
-    margin-top: 2.5em;
+div.section-title h3 {
+    text-align: left;
+    font-family: 'Consolas';
+    font-size: 5em;
+    padding-left: 1em;
+    vertical-align: middle;
+}
+
+
+
+.myface {
+    margin-top: -13em;
 }
 
 div.myface img {
@@ -89,8 +114,8 @@ div.myface img {
     margin-left: auto;
     margin-right: auto;
 
-    width:400px;
-    height:400px;
+    width:25em;
+    height:25em;
     object-fit: cover;
 }
 
@@ -107,4 +132,44 @@ div.myface img {
     padding: 3em;
     display: block;
     margin: auto;
+    padding-bottom: 5em;
+}
+
+.languages {
+    display: flex;
+    background-color: #FEF8F7;
+    align-items: center;
+    justify-content: center;
+}
+
+.language-logo {
+    display: inline;
+    width: 5em;
+    height: 5em;
+    object-fit: cover;
+    margin: 5em 2em;
+}
+
+#python {
+
+}
+
+#java {
+    width: 5em;
+    height: 9em;
+    object-fit: cover;
+}
+
+#html {
+    transform: scale(1.08);
+}
+
+#css {
+    width: 3.3em;
+    height: 4.7em;
+    object-fit: cover;
+}
+
+#javascript {
+
 }
