@@ -60,7 +60,7 @@ a:hover {
     font-size: 8em;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
     line-height: 1.5em;
     margin-top: 0.5em;
     padding-top: 0.4em;
@@ -87,25 +87,24 @@ a:hover {
     text-align: center;
     padding: 2.5em;
     letter-spacing: 0.5em;
-    background-color: #FEF8F7;
     color:black;
     z-index: -1;
-    font-family: "ApexNew-Medium";
     font-weight: lighter;
 }
 
 div.section-title h3 {
     text-align: left;
     font-family: 'Consolas';
-    font-size: 5em;
-    padding-left: 1em;
+    font-size: 6em;
+    padding-left: 0.75em;
     vertical-align: middle;
+    line-height: 0.9em;
+    color: white;
 }
 
 
-
 .myface {
-    margin-top: -13em;
+    margin-top: -5em;
 }
 
 div.myface img {
@@ -117,6 +116,7 @@ div.myface img {
     width:25em;
     height:25em;
     object-fit: cover;
+    filter: saturate(0.35);
 }
 
 .text {
