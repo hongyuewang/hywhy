@@ -6,8 +6,9 @@ html {
 }
 body {
     color: white;
-    /* background-color: #000000; */
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../img/nightsky.jpg');
+
+    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,6 +22,9 @@ body {
     padding: 0;
     animation: shrink 15s infinite alternate;
     animation-timing-function:ease-in-out;
+
+    perspective: 1px;
+    transform-style: preserve-3d;
 }
 
 p {
