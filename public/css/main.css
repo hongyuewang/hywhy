@@ -1,6 +1,11 @@
 @charset "utf-8";
 @import "fonts/apexnew/style.css";
 
+
+@-ms-viewport {
+  width: device-width;
+}
+
 html {
     scroll-behavior: smooth;
 }
