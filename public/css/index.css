@@ -1,176 +1,382 @@
 @charset "utf-8";
 @import "fonts/apexnew/style.css";
 
-nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: inline;
-    line-height: 3em;
-    letter-spacing: 0.2em;
+
+@media only screen and (min-width: 768px) {
+    /* for desktop */
+    nav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: inline;
+        line-height: 3em;
+        letter-spacing: 0.2em;
+    }
+
+    li {
+        display: inline;
+        float:left;
+    }
+
+    a {
+        display: inline-block;
+        padding: 1em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        color: white;
+        text-decoration: none;
+        transition: all .2s ease-in-out;
+    }
+
+    a:hover {
+        transform: scale(1.2);
+    }
+
+    .navbar .icon {
+        display: none;
+    }
+
+    #title-wrapper {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/blue-space.jpg);
+        text-align: center;
+        padding: 0;
+        margin:0;
+        display: inline-block;
+        position: relative;
+        animation: shrink 15s infinite alternate;
+        animation-timing-function:ease-in-out;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @keyframes shrink {
+      0% {
+        background-size: 120% 120%;
+      }
+      100% {
+        background-size: 100% 100%;
+      }
+    }
+
+
+    #title-name {
+        font-family: "ApexNew-Medium";
+        font-weight: lighter;
+        font-size: 8em;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        line-height: 1.5em;
+        margin-top: 0.5em;
+        padding-top: 0.4em;
+        padding-bottom: 1em;
+    }
+
+
+    #current-pos {
+        font-family: "Inconsolata";
+        font-weight: lighter;
+        font-size: 0.75em;
+        text-align: right;
+        padding-right: 7em;
+        padding-top: 5em;
+        letter-spacing: 0.25em;
+        display: absolute;
+    }
+
+
+    .section-title {
+        text-align: center;
+        padding: 2.5em;
+        letter-spacing: 0.5em;
+        color:black;
+        z-index: -1;
+        font-weight: lighter;
+    }
+
+    div.section-title h3 {
+        text-align: left;
+        font-family: 'Consolas';
+        font-size: 6em;
+        padding-left: 0.75em;
+        vertical-align: middle;
+        line-height: 0.9em;
+        color: white;
+    }
+
+
+    .myface {
+        margin-top: -5em;
+    }
+
+    div.myface img {
+        /* center */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        width:25em;
+        height:25em;
+        object-fit: cover;
+        filter: saturate(0.35);
+    }
+
+    .text {
+        font-family: "Inconsolata";
+        font-weight: lighter;
+        font-size: 1em;
+        text-align: center;
+        line-height: 1.5em;
+
+        height: 25%;
+        width: 25%;
+
+        padding: 3em;
+        display: block;
+        margin: auto;
+        padding-bottom: 5em;
+    }
+
+    .languages {
+        display: flex;
+        background-color: #FEF8F7;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .language-logo {
+        display: inline;
+        width: 5em;
+        height: 5em;
+        object-fit: cover;
+        margin: 5em 2em;
+    }
+
+    #python {
+
+    }
+
+    #java {
+        width: 5em;
+        height: 9em;
+        object-fit: cover;
+    }
+
+    #html {
+        transform: scale(1.08);
+    }
+
+    #css {
+        width: 3.3em;
+        height: 4.7em;
+        object-fit: cover;
+    }
+
+    #javascript {
+
+    }
 }
 
-li {
-    display: inline;
-    float:left;
-}
-
-a {
-    display: block;
-    padding: 1em;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-    color: white;
-    text-decoration: none;
-    transition: all .2s ease-in-out;
-}
-
-a:hover {
-    transform: scale(1.2);
-}
-
-.title-wrapper {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/blue-space.jpg);
-    text-align: center;
-    padding: 0;
-    margin:0;
-    display: inline-block;
-    position: relative;
-    animation: shrink 15s infinite alternate;
-    animation-timing-function:ease-in-out;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-@keyframes shrink {
-  0% {
-    background-size: 120% 120%;
-  }
-  100% {
-    background-size: 100% 100%;
-  }
-}
 
 
-.title-name {
-    font-family: "ApexNew-Medium";
-    font-weight: lighter;
-    font-size: 8em;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    line-height: 1.5em;
-    margin-top: 0.5em;
-    padding-top: 0.4em;
-    padding-bottom: 1em;
-}
+
+/* for mobile */
+@media only screen and (max-width:767px) {
+    nav {
+        list-style-type: none;
+        margin: 25px;
+        padding: 25px;
+        display: inline;
+        line-height: 3px;
+        letter-spacing: 1px;
+        font-size: 12px;
+    }
+
+    li {
+        display: inline;
+    }
+
+    a {
+        display: inline-block;
+        padding: 1em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        color: white;
+        text-decoration: none;
+        transition: all .2s ease-in-out;
+    }
+
+    a:hover {
+        transform: scale(1.2);
+    }
+
+    .navbar a {display: none;}
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
 
 
-.current-pos {
-    font-family: "Inconsolata";
-    font-weight: lighter;
-    font-size: 0.75em;
-    text-align: right;
-    padding-right: 7em;
-    padding-top: 5em;
-    letter-spacing: 0.25em;
 
-}
+    #title-wrapper {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/blue-space.jpg);
+        text-align: center;
+        padding: 0;
+        margin:0;
+        display: inline-block;
+        position: relative;
+        animation: shrink 15s infinite alternate;
+        animation-timing-function:ease-in-out;
 
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
-.section-title {
-    text-align: center;
-    padding: 2.5em;
-    letter-spacing: 0.5em;
-    color:black;
-    z-index: -1;
-    font-weight: lighter;
-}
-
-div.section-title h3 {
-    text-align: left;
-    font-family: 'Consolas';
-    font-size: 6em;
-    padding-left: 0.75em;
-    vertical-align: middle;
-    line-height: 0.9em;
-    color: white;
-}
+    @keyframes shrink {
+      0% {
+        background-size: 120% 120%;
+      }
+      100% {
+        background-size: 100% 100%;
+      }
+    }
 
 
-.myface {
-    margin-top: -5em;
-}
+    #title-name {
+        font-family: "ApexNew-Medium";
+        font-weight: lighter;
+        font-size: 5em;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        line-height: 1.5em;
+        margin-top: 0.5em;
+        padding-top: 0.4em;
+        padding-bottom: 1em;
+    }
 
-div.myface img {
-    /* center */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 
-    width:25em;
-    height:25em;
-    object-fit: cover;
-    filter: saturate(0.35);
-}
+    #current-pos {
+        font-family: "Inconsolata";
+        font-weight: lighter;
+        font-size: 10px;
+        text-align: center;
+        letter-spacing: 0.25em;
 
-.text {
-    font-family: "Inconsolata";
-    font-weight: lighter;
-    font-size: 1em;
-    text-align: center;
-    line-height: 1.5em;
+    }
 
-    height: 25%;
-    width: 25%;
 
-    padding: 3em;
-    display: block;
-    margin: auto;
-    padding-bottom: 5em;
-}
+    .section-title {
+        text-align: center;
+        padding: 2.5em;
+        letter-spacing: 0.5em;
+        color:black;
+        z-index: -1;
+        font-weight: lighter;
+    }
 
-.languages {
-    display: flex;
-    background-color: #FEF8F7;
-    align-items: center;
-    justify-content: center;
-}
+    div.section-title h3 {
+        text-align: left;
+        font-family: 'Consolas';
+        font-size: 6em;
+        padding-left: 0.75em;
+        vertical-align: middle;
+        line-height: 0.9em;
+        color: white;
+    }
 
-.language-logo {
-    display: inline;
-    width: 5em;
-    height: 5em;
-    object-fit: cover;
-    margin: 5em 2em;
-}
 
-#python {
+    .myface {
+        margin-top: -5em;
+    }
 
-}
+    div.myface img {
+        /* center */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
 
-#java {
-    width: 5em;
-    height: 9em;
-    object-fit: cover;
-}
+        width:25em;
+        height:25em;
+        object-fit: cover;
+        filter: saturate(0.35);
+    }
 
-#html {
-    transform: scale(1.08);
-}
+    .text {
+        font-family: "Inconsolata";
+        font-weight: lighter;
+        font-size: 1em;
+        text-align: center;
+        line-height: 1.5em;
 
-#css {
-    width: 3.3em;
-    height: 4.7em;
-    object-fit: cover;
-}
+        height: 25%;
+        width: 25%;
 
-#javascript {
+        padding: 3em;
+        display: block;
+        margin: auto;
+        padding-bottom: 5em;
+    }
 
+    .languages {
+        display: flex;
+        background-color: #FEF8F7;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .language-logo {
+        display: inline;
+        width: 5em;
+        height: 5em;
+        object-fit: cover;
+        margin: 5em 2em;
+    }
+
+    #python {
+
+    }
+
+    #java {
+        width: 5em;
+        height: 9em;
+        object-fit: cover;
+    }
+
+    #html {
+        transform: scale(1.08);
+    }
+
+    #css {
+        width: 3.3em;
+        height: 4.7em;
+        object-fit: cover;
+    }
+
+    #javascript {
+
+    }
 }
