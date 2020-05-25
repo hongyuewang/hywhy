@@ -68,13 +68,11 @@
     #title-name {
         font-family: "ApexNew-Medium";
         font-weight: lighter;
-        font-size: 8em;
+        font-size: 7em;
         text-align: center;
         text-transform: uppercase;
         letter-spacing: 0.1em;
-        line-height: 1.5em;
-        margin-top: 0.5em;
-        padding-top: 0.4em;
+        line-height: 1.25em;
         padding-bottom: 1em;
     }
 
@@ -85,7 +83,7 @@
         font-size: 0.75em;
         text-align: right;
         padding-right: 7em;
-        padding-top: 5em;
+        padding-top: 0.25em;
         letter-spacing: 0.25em;
         display: absolute;
     }
@@ -195,7 +193,7 @@
         height: 100%;
         margin: 0px;
         padding: 0px;
-        overflow-x: hidden; 
+        overflow-x: hidden;
     }
 
     nav {
