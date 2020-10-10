@@ -1,90 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hong Yue Wang</title>
+    <title>hong yue wang</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Javascript -->
-    <script src="script/main.js"></script>
-    <script src="script/index.js"></script>
-    <script src="https://unpkg.com/scrollreveal@4"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
-
 </head>
 
 <body>
-    <!--<div id="loader-wrapper">
-        <div id="loader"></div>
-
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-    </div> -->
-
-    <header class="lax" data-lax-opacity="0 1, 400 1, 700 0" id="title-wrapper">
-        <nav  class="navbar" id="navbar">
-            <a href="#about">about me</a>
-            <a href="">my projects</a>
-            <a href="">contact</a>
-            <a href="resume.pdf" target="_blank">resumé</a>
-            <a href="javascript:void(0);" class="icon" onclick="addResponsiveNavbar()"><i class="fa fa-bars"></i></a>
-
-
-        </nav>
-        <h2  id="current-pos"> software engineering student </h2>
-        <h1 class="lax" id="title-name">
-            Hong<br>
-            Yue<br>
-            Wang
-        </h1>
-
-
-    </header> <!-- end of header -->
-
-
-
-    <section class="about" id="about">
-        <div class="section-title" id="about-title">
-            <h3>
-                ABOUT <br>
-                 ME
-             </h3>
+    <div class="index-wrapper">
+        <div class="center">
+            <a href="index.html"><header class="header-link">hong yue wang</header></a>
+            <div class="bottom">software engineering student</div>
+            <nav>
+                <ul>
+                    <li><a class="nav-links" href="about.html">about me</a></li>
+                    <li><a class="nav-links" href="projects.html">projects</a></li>
+                    <li><a class="nav-links" href="contact.html">contact</a></li>
+                    <li><a class="nav-links" href="resume.pdf" target="_blank">résumé</a></li>
+            </nav>
         </div>
-        <div class="myface" id="myface">
-            <img src="img/canal.JPG" id="my-face-img" alt="My face">
-        </div>
-        <div class="text">
-            Hey, I'm Hong Yue, a software engineering student at the University of Ottawa.
-            I am familiar with web design and object-oriented programming, as well as video editing.
-        </div>
-
-    </section> <!-- end of about -->
-
-    <section class="skills">
-        <div class="languages">
-            <img class="language-logo" id="python" src="img/python.png" alt="Python Logo">
-            <img class="language-logo" id="java" src="img/java.png" alt="Java Logo">
-            <img class="language-logo" id="html" src="img/html.png" alt="HTML Logo">
-            <img class="language-logo" id="css" src="img/css.png" alt="CSS Logo">
-            <img class="language-logo" id="javascript" src="img/js.png" alt="Javascript Logo">
-        </div>
-    </section> <!-- end of skills -->
-
-
-    <section class="projects" id="projects">
-
-    </section>
-
-    <script type="text/javascript">
-        ScrollReveal().reveal('.title-name', { delay: 50, duration: 2000 });
-        ScrollReveal().reveal('h3', { delay: 50, duration: 2000 });
-        ScrollReveal().reveal('img', { delay: 50, duration: 2000 });
-        ScrollReveal().reveal('.text', { delay: 50, duration: 2000 });
-    </script>
-
+    </div>
+    <script src="script/script.js"></script>
 </body>
 </html>
