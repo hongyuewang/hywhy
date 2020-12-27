@@ -9,3 +9,26 @@
   transform-origin: center;
   color: #aca39a;
 }
+
+section {
+  margin-bottom: 1em;
+}
+
+img {
+  float: right;
+  object-fit: contain;
+  width: 50%;
+  height: 50%;
+  padding-left: 3em;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+}

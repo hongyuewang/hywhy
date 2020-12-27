@@ -87,11 +87,11 @@ a {
   text-align: center;
 }
 
-.page-name {
+p {
   text-align: left;
-  font-weight: 400;
 }
 
-p {
+h2, h3 {
+  font-weight: 400;
   text-align: left;
 }
