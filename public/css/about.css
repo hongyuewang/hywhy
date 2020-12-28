@@ -1,13 +1,14 @@
 #uottawa-link {
-  color: #d8464b;
+  color: #CACACA;
+  font-weight: bold;
   transition: all 0.2s ease-in-out;
 }
 
 #uottawa-link:hover {
   transform: scale(1.1);
-  text-transform: uppercase;
+  font-weight: bold;
   transform-origin: center;
-  color: #aca39a;
+  color: #D8464B;
 }
 
 section {
