@@ -34,3 +34,8 @@ if (/iphone|ipod|ipad.*os 5/gi.test(navigator.appVersion)) {
     }
   };
 }
+
+function openInNewTab(url) {
+  window.open(url);
+  return false;
+}
