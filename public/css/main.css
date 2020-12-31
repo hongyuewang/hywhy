@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 html {
   background-color: #282828;
@@ -7,7 +7,7 @@ html {
 
 body {
   font-family: "Roboto Mono", monospace;
-  color: #ADADAD;
+  color: #adadad;
   font-weight: 300;
 }
 
@@ -22,6 +22,7 @@ header {
   color: #7cd2fa;
   font-size: 2rem;
   margin: 5vh 0 2vh 0;
+  text-align: center;
 }
 
 nav {
@@ -43,11 +44,8 @@ a {
   text-decoration: none;
 }
 
-p {
-  text-align: left;
-}
-
-h2, h3 {
+h2,
+h3 {
   font-weight: 400;
   text-align: left;
 }
@@ -65,11 +63,12 @@ h2, h3 {
 }
 
 .bottom {
-  color: #CACACA;
+  color: #cacaca;
+  text-align: center;
 }
 
 .nav-links {
-  color: #CACACA;
+  color: #cacaca;
   position: relative;
   text-transform: uppercase;
   letter-spacing: 0.15em;
@@ -84,7 +83,7 @@ h2, h3 {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: #CACACA;
+  background: #cacaca;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -98,11 +97,10 @@ h2, h3 {
   width: 70%;
   max-width: 1920px;
   margin: 0 auto;
-  text-align: center;
 }
 
 .page-name {
-  color: #CACACA;
+  color: #cacaca;
   font-size: 1.75rem;
   font-weight: 500;
   text-transform: uppercase;

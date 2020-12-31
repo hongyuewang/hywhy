@@ -1,5 +1,5 @@
 #uottawa-link {
-  color: #CACACA;
+  color: #cacaca;
   font-weight: bold;
   transition: all 0.2s ease-in-out;
 }
@@ -8,7 +8,7 @@
   transform: scale(1.1);
   font-weight: bold;
   transform-origin: center;
-  color: #D8464B;
+  color: #d8464b;
 }
 
 section {
@@ -25,12 +25,17 @@ img {
 
 .container {
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: row;
 }
 
 @media (max-width: 800px) {
   .container {
     flex-direction: column-reverse;
+  }
+
+  #about-me-intro {
+    text-align: center;
   }
 
   img {
